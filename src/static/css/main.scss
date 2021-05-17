@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+$branco: #ffffff;
+$input-bd: rgba(255, 255, 255, 0.16);
+$cinza-claro: #eaeaeb;
+
+.container {
+    background-color: #051D3B;
+    padding: 1.5rem;
+    font-family:'Inter', sans-serif; ;
+}
+@import "./templates/header"
