@@ -1,28 +1,19 @@
 .menu {
-    width: 25vw;
-   
-    
+    width: 25%;
+
     &__titulo{
-       text-transform: uppercase;
-       letter-spacing: 0.2rem;
-       color: $cinza-claro;
-       font-weight: 200;
-       font-size: 0.8rem;
-       margin-bottom: 0.5rem;
-       
+       @include h2-da-home
     }
     &__list {
         display: flex;
         flex-direction: column;
     }
-    
     &__item{
-        opacity: 0.7;    
+        opacity: 0.4;    
     }
     &__item--active{
         opacity: 1 ;
     }
-
     &__link{
         padding-top: 1rem;
         display: flex;
@@ -33,7 +24,7 @@
             margin-right: 1rem;     
         }
         &__texto {
-            color: $cinza-claro;
+            color: $cinza-claro; 
         }
 
     }

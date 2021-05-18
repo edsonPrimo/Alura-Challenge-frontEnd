@@ -15,11 +15,9 @@
             <h1 class="header__titulo">
                 <a href="#" class="header__logo--link"><img class="header__logo--img" src="static/images/Logo.svg" alt="Logo Alura Dev"></a>
             </h1>
-
             <div class="header__pesquisa">
                 <input type="text" class="header__input" placeholder="Busque por algo">
-            </div>        
-
+            </div>       
             <div class="header__client client">
                 <a href="#" class="client__link">
                     <img src="static/images/edson-user.jpg" class="client__foto alt"><span class="client__nome">Edson</span>
@@ -34,13 +32,13 @@
                 <ul class="menu__list">
                     <li class="menu__item menu__item--active">
                         <a href="#" class="menu__link">
-                            <div class="menu__link__icone"><img src="static/images/Icon-editorCodigo.svg" alt=""></div>
+                            <div class="menu__link__icone"><img src="static/images/Icon-editorCodigo.svg" alt="Icone editor"></div>
                             <span class="menu__link__texto">Editor de Código</span>
                         </a>
                     </li>
                     <li class="menu__item ">
                         <a href="#" class="menu__link">
-                            <div class="menu__link__icone"><img src="static/images/Icon-comunidade.svg" alt=""></div>
+                            <div class="menu__link__icone"><img src="static/images/Icon-comunidade.svg" alt="Icone comunidade"></div>
                             <span class="menu__link__texto">Comunidade</span>
                         </a>
                     </li>
@@ -49,21 +47,33 @@
         </section>   
         <section class="conteudo"> 
             <div class="conteudo__container-bd">
-                <div>
-                   <textarea name="" id="" class="conteudo__editor"></textarea>
-
-
-                </div>
+                <textarea name="" id="" class="conteudo__editor"></textarea>
             </div>
 
-            <div></div>
+            <div>
+                <input type="button" class="conteudo__btn" value="Visualizar com o highlight">
+            </div>
         </section>
-        <section class="detalhes-projeto">
-            <h2 class="menu__titulo">Seu projeto</h2>
-
-
-       
-
+        <section class="menu-detalhes">
+            <div>
+                <h2 class="menu-detalhes__titulo">Seu projeto</h2>
+                <input type="text" class="menu-detalhes__input" placeholder="Nome do seu projeto">
+                <textarea class="menu-detalhes__descricao menu-detalhes__input" placeholder="Descrição do seu projeto"></textarea>
+            </div>
+            <div class="menu-detalhes__personalizacao">
+                <h2 class="menu-detalhes__titulo">Personalização</h2>
+                <select name="linguagem" id="" class="menu-detalhes__input menu-detalhes__select">
+                    <option class="menu-detalhas__select--option" value="javascript">JavaScript</option>
+                    <option class="menu-detalhas__select--option" value="Python">Python</option>
+                </select>
+                <div class="menu-detalhes__container select-bd">
+                    <select name="escolha-bd" id="" class="select-bd__select">
+                        <option value="verde" class="select-bd__verde"></option>
+                        <option value="vermelho" class="select-bd__vermelho"></option>
+                    </select>
+                </div>
+            </div>
+            
         </section>
     </main>
 </div>
