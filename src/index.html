@@ -44,12 +44,10 @@
                         </a>
                     </li>
                     <li class="menu__item ">
-                        <div>
                         <a href="#" class="menu__link">
                             <div class="menu__link__icone"><img src="static/images/Icon-comunidade.svg" alt="Icone comunidade"></div>
                             <span class="menu__link__texto">Comunidade</span>
                         </a>
-                        </div>
                     </li>
                 </ul>
             </nav> 
@@ -60,7 +58,7 @@
             </div>
 
             <div>
-                <input type="button" class="conteudo__btn" value="Visualizar com o highlight">
+                <input type="button" class="conteudo__btn botao" value="Visualizar com o highlight">
             </div>
         </section>
         <section class="menu-detalhes">
@@ -69,21 +67,21 @@
                 <input type="text" class="menu-detalhes__input" placeholder="Nome do seu projeto">
                 <textarea class="menu-detalhes__descricao menu-detalhes__input" placeholder="Descrição do seu projeto"></textarea>
             </div>
-            <div class="menu-detalhes__personalizacao">
-                <h2 class="menu-detalhes__titulo">Personalização</h2>
-                <select name="linguagem" id="" class="menu-detalhes__input menu-detalhes__select">
-                    <option class="menu-detalhes__select__option" value="javascript">JavaScript</option>
-                    <option class="menu-detalhes__select__option" value="Python">Python</option>
-                    <option class="menu-detalhes__select__option" value="Python">PHP</option>
+            
+            <h2 class="menu-detalhes__titulo personalizacao-titulo">Personalização</h2>
+            <select name="linguagem" id="" class="menu-detalhes__input menu-detalhes__select">
+                <option class="menu-detalhes__select__option" value="javascript">JavaScript</option>
+                <option class="menu-detalhes__select__option" value="Python">Python</option>
+                <option class="menu-detalhes__select__option" value="Python">PHP</option>
+            </select>
+            <div class="menu-detalhes__wrapper select-bd">
+                <select name="escolha-bd" id="" class="select-bd__select">
+                    <option value="verde" class="select-bd__azul"></option>
+                    <option value="vermelho" class="select-bd__vermelho"></option>
                 </select>
-                <div class="menu-detalhes__container select-bd">
-                    <select name="escolha-bd" id="" class="select-bd__select">
-                        <option value="verde" class="select-bd__azul"></option>
-                        <option value="vermelho" class="select-bd__vermelho"></option>
-                    </select>
-                </div>
-                <input type="button" class="menu-detalhes__btn-salvar" value="Salvar projeto">
             </div>
+            <input type="button" class="menu-detalhes__btn-salvar botao" value="Salvar projeto">
+        
             
         </section>
     </main>

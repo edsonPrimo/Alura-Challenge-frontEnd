@@ -1,5 +1,8 @@
 .conteudo {
     width: 50%;
+    @include for-tablet {
+        width: 100%;
+    }
 
     &__container-bd{
         background-color: rgb(41, 139, 184);
@@ -39,7 +42,7 @@
         margin-top: 1.5rem;
         width: 100%;
         box-sizing: border-box;
-        padding: 0.7rem;
+        padding: 1rem;
         border-radius: 8px;
         border: none;
         background: $azul-input;

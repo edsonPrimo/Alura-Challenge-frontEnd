@@ -11,16 +11,15 @@ $azul:#5081FB;
 $azul-claro:#7BA4FC;
 $azul-bebe:#7BA4FC;
 
-.container {
-    background-color: $azul-background;
-    height: 100vh;
-    padding: 1.5rem;
-    font-family:'Inter', sans-serif;
+/******* MEDIAS ********/
+
+@mixin for-tablet {
+    @media screen and (max-width:1024px){
+        @content;
+    }    
 }
-.main {
-    display: flex;
-    padding-top: 3rem;
-}
+
+/******* Outros mixins ********/
 @mixin h2-da-home {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -45,12 +44,18 @@ $azul-bebe:#7BA4FC;
     box-sizing: border-box;  
 }
 
-
-/******* MEDIAS ***************/
-@mixin for-tablet {
-    @media screen and (max-width:1024px){
-        @content;
-    }    
+.container {
+    background-color: $azul-background;
+    height: 100%;
+    padding: 1.5rem;
+    font-family:'Inter', sans-serif;
+}
+.main {
+    display: flex;
+    padding-top: 3rem;
+    @include for-tablet {
+        flex-direction: column;
+    }
 }
 
 @import "./templates/header";

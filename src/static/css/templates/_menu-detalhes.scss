@@ -3,10 +3,20 @@
     height: auto;
     box-sizing: border-box;
     padding-left: 2.5rem;
-    
+    @include for-tablet{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 2rem;
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap
+    }
     &__titulo {
         @include h2-da-home;
         margin-bottom:1rem;
+    }
+    .personalizacao-titulo{
+        margin-top: 2.5rem
     }
     &__input{
         @include input ;
@@ -28,13 +38,16 @@
     &__select{
         padding: 0.75rem;
         color: rgba(211, 211, 211, 0.534);
+        @include for-tablet {
+            width: 45%;
+        }
         &__option {
             background-color: $input-bd;
             color: $preto;
             font-size: 1rem;
         }
     }
-    &__container{
+    &__wrapper{
         height: 2.5rem;
         width: 100%;
         padding: 0.2rem;
@@ -50,6 +63,9 @@
         border: 1px solid $cinza-claro;
         border-radius: 8px;
         box-sizing: border-box;
+        @include for-tablet{
+            width: 45%;
+        }
         &__select{
             width: 100%;
             border-radius: 5px;
@@ -59,7 +75,6 @@
             line-height: 2.5rem;
             appearance: none;
             background-color: rgb(41, 139, 184);
-            
         }
         &__azul{
             background-color: rgb(41, 139, 184);
@@ -68,12 +83,12 @@
             background-color: rgb(139, 56, 56);
         } 
     }
-    &__btn-salvar{
+    .botao{
         width: 100%;
         box-sizing: border-box;
         border: none;
         border-radius: 8px;
-        padding: 0.7rem;
+        padding: 1rem;
         margin-top: 1.58rem;
         background-color: $azul;
     

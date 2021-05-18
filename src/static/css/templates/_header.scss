@@ -10,7 +10,11 @@
         width: 25%;
     }
     &__pesquisa {
-        width: calc(50% - 4px);
+        width: 50%;
+        box-sizing: border-box;
+        @include for-tablet{
+            width: 60%    /*>>>>>>>>>>melhorar com o menu hamburguer*/
+        }
     }
     &__input{
         @include input;
@@ -24,11 +28,18 @@
 
     .client {
         width: 25%;
+        display: flex;
+        justify-content: flex-end;
         &__link {
             display: flex;
             align-items: center;
             text-decoration: none;
-            justify-content: flex-end;
+            width: fit-content;
+            border-radius: 8px;
+            padding: 0.5rem;
+            &:hover{
+                background-color:rgba(255, 255, 255, 0.08);
+            }
         }
         &__foto {
             border-radius: 50%;

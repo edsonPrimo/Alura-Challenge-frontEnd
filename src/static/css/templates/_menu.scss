@@ -1,4 +1,7 @@
 .menu {
+    @include for-tablet {
+        display: none;
+    }
     width: 25%;
 
     &__titulo{
