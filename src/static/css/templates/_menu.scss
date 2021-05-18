@@ -9,11 +9,18 @@
         flex-direction: column;
     }
     &__item{
-        opacity: 0.4;    
+        opacity: 0.40; 
+        &:hover{
+            opacity: 0.8;
+        } 
+        &:active{
+            opacity: 1;
+        }  
     }
     &__item--active{
-        opacity: 1 ;
+        opacity: 1;
     }
+    
     &__link{
         padding-top: 1rem;
         display: flex;

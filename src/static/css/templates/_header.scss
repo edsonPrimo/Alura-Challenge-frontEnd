@@ -13,7 +13,10 @@
         width: calc(50% - 4px);
     }
     &__input{
-        @include input
+        @include input;
+        &:hover{
+            background-color:rgba(211, 211, 211, 0.24);
+        }
     }
     &__input::placeholder{
         @include input-placeholder
