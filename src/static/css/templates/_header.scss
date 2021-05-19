@@ -8,20 +8,34 @@
     &__titulo {
         height: 2rem;
         width: 25%;
+        @include for-tablet {
+            width: auto;
+        }
     }
     &__pesquisa {
         width: 50%;
         box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
         @include for-tablet{
             width: 60%    /*>>>>>>>>>>melhorar com o menu hamburguer*/
+        }
+        // @include for-phone {
+        //     display: none
+        // }
+    }
+    &__lupa {
+        display: none;
+        margin-right: 1rem;
+        @include for-phone {
+            display: inline-block
         }
     }
     &__input{
         @include input;
-        &:hover{
+        &:hover, &:focus{
             background-color:rgba(211, 211, 211, 0.24);
         }
-
         @include for-phone{
             display: none;
         }
@@ -34,6 +48,9 @@
         width: 25%;
         display: flex;
         justify-content: flex-end;
+        @include for-tablet {
+            width: auto;
+        }
         &__link {
             display: flex;
             align-items: center;
@@ -43,6 +60,27 @@
             padding: 0.5rem;
             &:hover{
                 background-color:rgba(255, 255, 255, 0.08);
+            }
+            @include for-tablet {
+                display: none;
+            }
+        }
+        &__hamburguer{
+            display: none;
+            border-radius: 8px;
+            width: 48px;
+            height: 48px;
+            &:hover svg {
+                background: rgba(80, 129, 251, 0.08);
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+            &:active {
+                background: $azul-input;
+            }
+            @include for-tablet {
+                display: inline-block;
             }
         }
         &__foto {

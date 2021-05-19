@@ -11,15 +11,20 @@ $azul:#5081FB;
 $azul-claro:#7BA4FC;
 $azul-bebe:#7BA4FC;
 
+*{
+    input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+}
 /******* MEDIAS ********/
 
 @mixin for-tablet {
-    @media screen and (max-width:1024px){
+    @media screen and (max-width:1023.98px){
         @content;
     }    
 }
 @mixin for-phone {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:767.98px) {
         @content;
     }
 }

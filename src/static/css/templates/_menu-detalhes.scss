@@ -3,7 +3,6 @@
     height: auto;
     box-sizing: border-box;
     padding-left: 2.5rem;
-    
     @include for-tablet{
         width: 100%;
         padding-left: 0;
@@ -18,7 +17,7 @@
     }
     &__input{
         @include input ;
-        &:hover{
+        &:hover, &:focus{
            background-color: rgba(211, 211, 211, 0.24);
         }
     }
@@ -78,11 +77,10 @@
         }
         &__select{
             width: 100%;
-            border-radius: 5px;
+            border-radius: 8px;
             height: 2rem;
             border: none;
             box-sizing: border-box;
-            // line-height: 2.5rem;
             appearance: none;
             background-color: rgb(41, 139, 184);
         }
@@ -101,22 +99,15 @@
         padding: 1rem;
         margin-top: 1.58rem;
         background-color: $azul;
-    
         &:hover{
             background: $azul-claro;
-            outline: none;
         }
         &:active{
             border: 4px solid $azul;
-            outline: none;
-            outline-style: none;
         }
         &:focus{
             background: $azul-bebe;
-            outline: none;
-            outline-style: none;
-            box-shadow: none;
-            
+                      
         }
     }
 }
