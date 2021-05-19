@@ -14,6 +14,9 @@
         border-radius: 8px;
         box-sizing: border-box;
         position: relative;
+        @include for-phone {
+            padding:1.5rem;
+        }
         &::after{
             content: '';
             width: 3.5rem;
@@ -23,6 +26,9 @@
             position: absolute;
             background-image: url("/src/static/images/mac_buttons.svg");
             background-repeat: no-repeat;
+            @include for-tablet{
+                top: 14%;
+            }
         }
     }
     &__editor{
@@ -35,9 +41,7 @@
         color: $cinza-claro;
         box-sizing: border-box;
         font-size: 1rem ;
-    
     }
-
     &__btn{
         margin-top: 1.5rem;
         width: 100%;

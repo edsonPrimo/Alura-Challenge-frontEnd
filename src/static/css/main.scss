@@ -18,6 +18,11 @@ $azul-bebe:#7BA4FC;
         @content;
     }    
 }
+@mixin for-phone {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
 
 /******* Outros mixins ********/
 @mixin h2-da-home {
@@ -43,18 +48,25 @@ $azul-bebe:#7BA4FC;
     text-indent: 1rem;
     box-sizing: border-box;  
 }
-
+body{
+    background-color:$azul-background;
+}
 .container {
-    background-color: $azul-background;
-    height: 100%;
+    height: fit-content;
     padding: 1.5rem;
     font-family:'Inter', sans-serif;
+    @include for-phone {
+        padding: 1rem;
+    }
 }
 .main {
     display: flex;
     padding-top: 3rem;
     @include for-tablet {
         flex-direction: column;
+    }
+    @include for-phone{
+        padding-top: 2rem;
     }
 }
 
