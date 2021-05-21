@@ -16,10 +16,20 @@ $azul-bebe:#7BA4FC;
         outline: none;
     }
 }
+*{/* Hide scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+        
+    /* Hide scrollbar for IE, Edge and Firefox */
+    body {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }}
 /******* MEDIAS ********/
 
 @mixin for-tablet {
-    @media screen and (max-width:1023.98px){
+    @media screen and (max-width:999.98px){
         @content;
     }    
 }
@@ -74,8 +84,11 @@ body{
         padding-top: 2rem;
     }
 }
-
+.hide {
+    display: none
+}
 @import "./templates/header";
 @import "./templates/menu";
 @import "./templates/conteudo";
 @import "./templates/menu-detalhes";
+@import "./templates/navHamburguer"
