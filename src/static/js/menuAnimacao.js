@@ -4,3 +4,4 @@ btnMenu.addEventListener('click', () => {
     menu.classList.toggle('menu__open')
     btnMenu.classList.toggle('overflow')
 })
+

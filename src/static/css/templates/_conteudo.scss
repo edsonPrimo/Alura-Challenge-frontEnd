@@ -1,15 +1,14 @@
 .conteudo {
     width: 50%;
     @include for-tablet {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
     }
     @include for-phone {
         width: 100%;
         margin: 0;
     }
 
-    &__container-bd{
+    &__container-bg{
         background-color: rgb(41, 139, 184);
         display: flex;
         justify-content: center;

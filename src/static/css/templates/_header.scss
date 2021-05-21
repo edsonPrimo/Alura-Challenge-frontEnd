@@ -18,11 +18,11 @@
         display: flex;
         justify-content: flex-end;
         @include for-tablet{
-            width: 60%    /*>>>>>>>>>>melhorar com o menu hamburguer*/
+            width: 60%    /*>>>>>>>>>>melhorar com o menu hamburguer*/;
         }
-        // @include for-phone {
-        //     display: none
-        // }
+        @include for-phone {
+            display: 40%
+        }
     }
     &__lupa {
         display: none;

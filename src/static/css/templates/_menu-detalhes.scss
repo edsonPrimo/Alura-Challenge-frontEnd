@@ -59,7 +59,7 @@
         justify-content: center;
         align-items: center;
     }
-    .select-bd {
+    .select-bg {
         margin-top: 1rem;
         width: 100%;
         height: 3rem;
@@ -75,21 +75,12 @@
             width: 100%;
             margin-top: 1rem;
         }
-        &__select{
-            width: 100%;
-            border-radius: 8px;
-            height: 2rem;
+        &__input {
             border: none;
-            box-sizing: border-box;
-            appearance: none;
-            background-color: rgb(41, 139, 184);
+            background: transparent;
+            width: 100%;
+            height: 100%;
         }
-        &__azul{
-            background-color: rgb(41, 139, 184);
-        }
-        &__vermelho{
-            background-color: rgb(139, 56, 56);
-        } 
     }
     .botao{
         width: 100%;
@@ -106,9 +97,9 @@
             border: 4px solid $azul;
         }
         &:focus{
-            background: $azul-bebe;
-                      
+            background: $azul-bebe;             
         }
+    
     }
-}
 
+}
