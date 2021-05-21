@@ -33,6 +33,7 @@
     top: 120%;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
     transition: right 200ms linear;
+    z-index:2;
 }
 .menu__open {
     right:1%;

@@ -29,7 +29,7 @@ $azul-bebe:#7BA4FC;
 /******* MEDIAS ********/
 
 @mixin for-tablet {
-    @media screen and (max-width:999.98px){
+    @media screen and (max-width:1023.98px){
         @content;
     }    
 }
