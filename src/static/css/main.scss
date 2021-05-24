@@ -12,7 +12,7 @@ $azul-claro:#7BA4FC;
 $azul-bebe:#7BA4FC;
 
 *{
-    input:focus, textarea:focus, select:focus{
+    input:focus, textarea:focus, select:focus, code:focus{
         outline: none;
     }
 }
@@ -57,12 +57,14 @@ $azul-bebe:#7BA4FC;
     color: $branco;
     font-family:'Inter', sans-serif;
     box-sizing: border-box;
+    text-indent: 1rem;
 }
 @mixin input-placeholder {
     color: rgba(211, 211, 211, 0.534);
     text-indent: 1rem;
     box-sizing: border-box;  
 }
+
 body{
     background-color:$azul-background;
 }
@@ -70,8 +72,11 @@ body{
     height: fit-content;
     padding: 1.5rem;
     font-family:'Inter', sans-serif;
+    @media screen and (max-width:1024px) {
+        padding: 1rem 10rem;
+    }
     @include for-tablet{
-        padding: 2rem 3rem;
+        padding: 1rem 3rem;
     }
     @include for-phone {
         padding: 1.5rem;
@@ -79,7 +84,8 @@ body{
 }
 .main {
     display: flex;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     @include for-tablet {
         flex-direction: column;
     }
@@ -94,4 +100,5 @@ body{
 @import "./templates/menu";
 @import "./templates/conteudo";
 @import "./templates/menu-detalhes";
-@import "./templates/navHamburguer"
+@import "./templates/navHamburguer";
+@import "./templates/comunidade"

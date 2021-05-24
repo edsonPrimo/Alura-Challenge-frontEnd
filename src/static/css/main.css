@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-* input:focus, * textarea:focus, * select:focus {
+* input:focus, * textarea:focus, * select:focus, * code:focus {
   outline: none;
 }
 
@@ -32,9 +32,15 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 1rem 10rem;
+  }
+}
+
 @media screen and (max-width: 1023.98px) {
   .container {
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
   }
 }
 
@@ -46,7 +52,8 @@ body {
 
 .main {
   display: flex;
-  padding-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 1023.98px) {
@@ -121,6 +128,7 @@ body {
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
+  text-indent: 1rem;
 }
 
 .header__input:hover, .header__input:focus {
@@ -236,18 +244,18 @@ body {
   color: #eaeaeb;
 }
 
-.conteudo {
+.conteudo-editor {
   width: 50%;
 }
 
 @media screen and (max-width: 1023.98px) {
-  .conteudo {
+  .conteudo-editor {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 767.98px) {
-  .conteudo {
+  .conteudo-editor {
     width: 100%;
     margin: 0;
   }
@@ -273,9 +281,12 @@ body {
 
 .conteudo .preview {
   display: block;
-  padding: 10px;
+  padding: 2rem 1rem;
   border-radius: 7px;
   height: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+  border: none;
 }
 
 .conteudo__textarea--wrapper {
@@ -377,6 +388,7 @@ body {
   color: #ffffff;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
+  text-indent: 1rem;
 }
 
 .menu-detalhes__input:hover, .menu-detalhes__input:focus {
@@ -551,5 +563,82 @@ body {
   align-items: center;
   margin-left: .4rem;
   text-decoration: none;
+}
+
+.conteudo-comunidade {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .conteudo-comunidade {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.conteudo-comunidade__bg {
+  width: 49%;
+  background-color: #298bb8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .conteudo-comunidade__bg {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .conteudo-comunidade__bg {
+    width: 100%;
+    padding: 1.7rem;
+  }
+}
+
+.conteudo-comunidade__textarea--wrapper {
+  width: 100%;
+}
+
+.conteudo-comunidade__textarea--wrapper::before {
+  content: '';
+  width: 3.5rem;
+  top: 2.5rem;
+  left: 2.6rem;
+  height: 1rem;
+  position: absolute;
+  background-image: url("/src/static/images/mac_buttons.svg");
+  background-repeat: no-repeat;
+  background-size: 2.3rem;
+}
+
+@media screen and (max-width: 767.98px) {
+  .conteudo-comunidade__textarea--wrapper::before {
+    top: 2.4rem;
+    left: 2.5rem;
+    background-size: 2rem;
+  }
+}
+
+.conteudo-comunidade__textarea--wrapper .preview {
+  display: block;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  border-radius: 7px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: monospace;
+  border: none;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  overflow-x: auto;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,61 @@
+.conteudo-comunidade {
+    width: 75%;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    @include for-tablet {
+        width: 100%;
+        justify-content: center;
+    }
+    &__bg{
+        width: 49%;
+        background-color: rgb(41, 139, 184);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-sizing: border-box;
+        position: relative;
+        @include for-tablet {
+            width: 85%;
+        }
+        @include for-phone {
+            width: 100%;
+            padding:1.7rem;
+        }
+    }
+    &__textarea--wrapper{
+        width: 100%;
+            &::before{
+            content: '';
+            width: 3.5rem;
+            top: 2.5rem;
+            left: 2.6rem;
+            height: 1rem;
+            position: absolute;
+            background-image: url("/src/static/images/mac_buttons.svg");
+            background-repeat: no-repeat;
+            background-size: 2.3rem;
+            @include for-phone {
+                top:2.4rem;
+                left: 2.5rem;
+                background-size: 2rem;
+            }
+        } 
+        .preview {
+            display: block;
+            padding: 1.5rem 1rem 0.5rem 1rem;
+            border-radius: 7px;
+            height: 100%; 
+            box-sizing: border-box;
+            font-family: monospace;
+            border: none;
+            box-sizing: border-box;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        
+    }
+}
