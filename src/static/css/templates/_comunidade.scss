@@ -7,27 +7,44 @@
         width: 100%;
         justify-content: center;
     }
-    &__bg{
+
+    &__container {
         width: 49%;
-        background-color: rgb(41, 139, 184);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-        border-radius: 8px;
-        box-sizing: border-box;
-        position: relative;
         @include for-tablet {
             width: 85%;
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
         }
         @include for-phone {
             width: 100%;
             padding:1.7rem;
         }
     }
+    &__bg{
+        width: 100%;
+        background-color: rgb(41, 139, 184);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-sizing: border-box;
+        position: relative;
+        // @include for-tablet {
+        //     width: 85%;
+        // }
+        // @media screen and (max-width:768px) {
+        //     width: 100%;
+        // }
+        // @include for-phone {
+        //     width: 100%;
+        //     padding:1.7rem;
+        // }
+    }
     &__textarea--wrapper{
         width: 100%;
+    
             &::before{
             content: '';
             width: 3.5rem;
@@ -44,6 +61,7 @@
                 background-size: 2rem;
             }
         } 
+    }
         .preview {
             display: block;
             padding: 1.5rem 1rem 0.5rem 1rem;
@@ -55,7 +73,42 @@
             box-sizing: border-box;
             white-space: pre-wrap;
             overflow-x: auto;
+            min-height: 300px;
         }
-        
+      
+    &__informacoes{
+        background-color: #00000016;
+        color: $branco;
+        padding: 2rem 1rem;
+        border-radius: 0 0 8px 8px; 
+        display: flex;
+        flex-direction: column;
+        color: $cinza-claro;
+        &:hover {
+
+        }
+    }
+    &__titulo{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        color: $branco;
+    }
+
+    &__feedback{
+        display: flex;
+        justify-content: space-between;
+        margin:2rem 1rem 0 1rem
+    }
+    &__feedback--like {
+        display:flex;
+        width: 100px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .client__link {
+        @include for-tablet {
+            display: flex;
+        }
     }
 }

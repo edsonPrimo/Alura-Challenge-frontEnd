@@ -34,7 +34,7 @@ $azul-bebe:#7BA4FC;
     }    
 }
 @mixin for-phone {
-    @media screen and (max-width:767.98px) {
+    @media screen and (max-width:599.98px) {
         @content;
     }
 }
