@@ -1,4 +1,4 @@
-.conteudo {
+.conteudo-editor {
     width: 50%;
     @include for-tablet {
         width: 100%;
@@ -7,13 +7,14 @@
         width: 100%;
         margin: 0;
     }
-
+} 
+.conteudo {
     &__container-bg{
         background-color: rgb(41, 139, 184);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 348px;
+        height: 360px;
         padding: 2rem;
         border-radius: 8px;
         box-sizing: border-box;
@@ -21,6 +22,19 @@
         @include for-phone {
             padding:1.7rem;
         }
+    }
+    .preview {
+        display: block;
+        padding: 2rem 1rem;
+        border-radius: 7px;
+        height: 100%; 
+        box-sizing: border-box;
+        font-family: monospace;
+        font-size: 14px;
+        border: none;
+        box-sizing: border-box;
+        white-space: pre-wrap;
+        overflow: auto;
     }
     &__textarea--wrapper{
         width: 100%;
@@ -34,14 +48,12 @@
             position: absolute;
             background-image: url("/src/static/images/mac_buttons.svg");
             background-repeat: no-repeat;
-            background-size: 3rem;
+            background-size: 2.6rem;
             @include for-phone {
                 top:2.4rem;
                 left: 2.5rem;
-                background-size: 2.6rem;
             }
-        }
-        
+        } 
     }
     &__editor{
         background: $preto;

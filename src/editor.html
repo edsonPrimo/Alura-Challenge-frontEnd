@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="static/images/Logo.svg" type="image/x-icon">
+<link rel="stylesheet" href="static/css/reset.css">
+<link rel="stylesheet" href="static/css/templates/night-owl.css">
+<link rel="stylesheet" href="static/css/main.css">
+<title>Alura Dev - Editor</title>
+</head>
+<body>
+<div class="container">
+<header class="header">
+	<nav class="header__nav">
+			<h1 class="header__titulo">
+					<a href="#" class="header__logo--link"><img class="header__logo--img" src="static/images/Logo.svg" alt="Logo Alura Dev"></a>
+			</h1>
+			<div class="header__pesquisa">
+					<a href="" class="header__lupa">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.7263 17.2913L15.8322 13.3971C15.6564 13.2214 15.4182 13.1237 15.1682 13.1237H14.5315C15.6096 11.7449 16.2501 10.0107 16.2501 8.12421C16.2501 3.63636 12.6138 0 8.12592 0C3.63807 0 0.00170898 3.63636 0.00170898 8.12421C0.00170898 12.612 3.63807 16.2484 8.12592 16.2484C10.0125 16.2484 11.7467 15.6079 13.1254 14.5298V15.1665C13.1254 15.4165 13.2231 15.6547 13.3988 15.8305L17.293 19.7246C17.6601 20.0918 18.2538 20.0918 18.6171 19.7246L19.7224 18.6193C20.0896 18.2521 20.0896 17.6584 19.7263 17.2913ZM8.12592 13.1237C5.36447 13.1237 3.1264 10.8896 3.1264 8.12421C3.1264 5.36276 5.36056 3.12469 8.12592 3.12469C10.8874 3.12469 13.1254 5.35885 13.1254 8.12421C13.1254 10.8857 10.8913 13.1237 8.12592 13.1237Z" fill="white"/>
+							</svg> 
+					</a>
+					<input type="text" class="header__input" placeholder="Busque por algo">
+			</div>       
+			<div class="header__client client">
+					<a href="#" class="client__link">
+							<img src="static/images/edson-user.jpg" class="client__foto alt"><span class="client__nome">Edson</span>
+					</a>
+			</div>
+			<!--MENU HAMBURGUER PARA MEDIAS MENORES-->
+			<div class="header__hamburguer overflow" data-icone>
+					<nav class="menu__nav hamburguer__nav">
+							<a href="#" class="hamburguer__btn">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.7143 18.4643H33.2857C33.6802 18.4643 34 18.1445 34 17.75V15.9643C34 15.5698 33.6802 15.25 33.2857 15.25H14.7143C14.3198 15.25 14 15.5698 14 15.9643V17.75C14 18.1445 14.3198 18.4643 14.7143 18.4643ZM14.7143 25.6071H33.2857C33.6802 25.6071 34 25.2874 34 24.8929V23.1071C34 22.7126 33.6802 22.3929 33.2857 22.3929H14.7143C14.3198 22.3929 14 22.7126 14 23.1071V24.8929C14 25.2874 14.3198 25.6071 14.7143 25.6071ZM14.7143 32.75H33.2857C33.6802 32.75 34 32.4302 34 32.0357V30.25C34 29.8555 33.6802 29.5357 33.2857 29.5357H14.7143C14.3198 29.5357 14 29.8555 14 30.25V32.0357C14 32.4302 14.3198 32.75 14.7143 32.75Z" fill="white"/>
+									</svg>
+							</a>
+							<ul class="menu__list menu__hamburguer" data-hamburguer>
+									<li class="menu__item menu__item--active">
+										<a href="editor.html" class="menu__link">
+											<svg class="menu__link__icone"width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect width="48" height="48" rx="16" fill="#5081FB"/>
+													<g opacity="1">
+													<path d="M17 23C18.1031 23 19 22.1031 19 21C19 19.8969 18.1031 19 17 19C15.8969 19 15 19.8969 15 21C15 22.1031 15.8969 23 17 23ZM31 23C32.1031 23 33 22.1031 33 21C33 19.8969 32.1031 19 31 19C29.8969 19 29 19.8969 29 21C29 22.1031 29.8969 23 31 23ZM32 24H30C29.45 24 28.9531 24.2219 28.5906 24.5813C29.85 25.2719 30.7437 26.5188 30.9375 28H33C33.5531 28 34 27.5531 34 27V26C34 24.8969 33.1031 24 32 24ZM24 24C25.9344 24 27.5 22.4344 27.5 20.5C27.5 18.5656 25.9344 17 24 17C22.0656 17 20.5 18.5656 20.5 20.5C20.5 22.4344 22.0656 24 24 24ZM26.4 25H26.1406C25.4906 25.3125 24.7688 25.5 24 25.5C23.2312 25.5 22.5125 25.3125 21.8594 25H21.6C19.6125 25 18 26.6125 18 28.6V29.5C18 30.3281 18.6719 31 19.5 31H28.5C29.3281 31 30 30.3281 30 29.5V28.6C30 26.6125 28.3875 25 26.4 25ZM19.4094 24.5813C19.0469 24.2219 18.55 24 18 24H16C14.8969 24 14 24.8969 14 26V27C14 27.5531 14.4469 28 15 28H17.0594C17.2563 26.5188 18.15 25.2719 19.4094 24.5813Z" fill="white"/>
+													</g>
+											</svg>
+											<!-- <div class="menu__link__icone"><img src="static/images/Icon-editorCodigo.svg" alt="Icone editor"></div> -->
+											<span class="menu__link__texto">Editor de Código</span>
+										</a>
+									</li>
+									<li class="menu__item ">
+											<a href="comunidade.html" class="menu__link">
+												<div class="menu__link__icone"><img src="static/images/Icon-comunidade.svg" alt="Icone comunidade"></div>
+												<span class="menu__link__texto">Comunidade</span>
+											</a>
+									</li>
+									<div class="hamburguer__client">
+										<a href="#" class="hamburguer__link">
+											<img src="static/images/edson-user-grande.jpg" class="client__foto alt"><span class="client__nome">Edson</span>
+										</a>
+									</div>
+							</ul>
+					</nav>
+			</div>
+	</nav>
+</header>
+<main class="main">
+	<section class="menu">
+			<h2 class="menu__titulo">Menu</h2>
+			<nav class="menu__nav">
+					<ul class="menu__list">
+							<li class="menu__item menu__item--active">
+									<a href="editor.html" class="menu__link">
+											<svg class="menu__link__icone"width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect width="48" height="48" rx="16" fill="#5081FB"/>
+												<g opacity="1">
+												<path d="M17 23C18.1031 23 19 22.1031 19 21C19 19.8969 18.1031 19 17 19C15.8969 19 15 19.8969 15 21C15 22.1031 15.8969 23 17 23ZM31 23C32.1031 23 33 22.1031 33 21C33 19.8969 32.1031 19 31 19C29.8969 19 29 19.8969 29 21C29 22.1031 29.8969 23 31 23ZM32 24H30C29.45 24 28.9531 24.2219 28.5906 24.5813C29.85 25.2719 30.7437 26.5188 30.9375 28H33C33.5531 28 34 27.5531 34 27V26C34 24.8969 33.1031 24 32 24ZM24 24C25.9344 24 27.5 22.4344 27.5 20.5C27.5 18.5656 25.9344 17 24 17C22.0656 17 20.5 18.5656 20.5 20.5C20.5 22.4344 22.0656 24 24 24ZM26.4 25H26.1406C25.4906 25.3125 24.7688 25.5 24 25.5C23.2312 25.5 22.5125 25.3125 21.8594 25H21.6C19.6125 25 18 26.6125 18 28.6V29.5C18 30.3281 18.6719 31 19.5 31H28.5C29.3281 31 30 30.3281 30 29.5V28.6C30 26.6125 28.3875 25 26.4 25ZM19.4094 24.5813C19.0469 24.2219 18.55 24 18 24H16C14.8969 24 14 24.8969 14 26V27C14 27.5531 14.4469 28 15 28H17.0594C17.2563 26.5188 18.15 25.2719 19.4094 24.5813Z" fill="white"/>
+												</g>
+											</svg>
+											<!-- <div class="menu__link__icone"><img src="static/images/Icon-editorCodigo.svg" alt="Icone editor"></div> -->
+											<span class="menu__link__texto">Editor de Código</span>
+									</a>
+							</li>
+							<li class="menu__item ">
+									<a href="comunidade.html" class="menu__link">
+											<div class="menu__link__icone"><img src="static/images/Icon-comunidade.svg" alt="Icone comunidade"></div>
+											<span class="menu__link__texto">Comunidade</span>
+									</a>
+							</li>
+					</ul>
+			</nav> 
+	</section>   
+	<section class="conteudo conteudo-editor"> 
+				<div class="conteudo__container-bg">
+					<div class="conteudo__textarea--wrapper">
+						<code class="preview hljs" contenteditable="true" aria-label="editor" data-conteudo></code>
+					</div>
+			</div>
+			<div>
+					<input type="button" class="conteudo__btn botao" data-btnHLJS value="Visualizar com o highlight">
+			</div>
+	</section>
+	<section class="menu-detalhes">
+			<div>
+					<h2 class="menu-detalhes__titulo">Seu projeto</h2>
+					<input type="text" class="menu-detalhes__input" placeholder="Nome do seu projeto" data-projetoTitulo>
+					<textarea class="menu-detalhes__descricao menu-detalhes__input" placeholder="Descrição do seu projeto" data-projetoDescricao></textarea>
+			</div>
+			<h2 class="menu-detalhes__titulo personalizacao-titulo">Personalização</h2>
+			<div class="menu-detalhes__containerflex">
+					<select name="linguagem" id="" class="menu-detalhes__input menu-detalhes__select linguagem">
+							<option class="menu-detalhes__select__option" value="javascript">JavaScript</option>
+							<option class="menu-detalhes__select__option" value="html">HTML</option>
+							<option class="menu-detalhes__select__option" value="css">CSS</option>
+					</select>
+					<div class="menu-detalhes__wrapper select-bg">
+							<input type="color" name="escolha-bg" class="select-bg__input" value="#6BD1FF">
+					</div>
+					<input type="button" class="menu-detalhes__btn-salvar botao" value="Salvar projeto" data-btnSalvar>
+			</div>
+			
+	</section>
+</main>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<script src="static/js/hightlight.js"></script>
+<script src="static/js/mudaBg.js"></script>
+<script src="./static/js/menuAnimacao.js"></script>
+<script src="static/js/controle.js"></script>
+</body>
+</html>
