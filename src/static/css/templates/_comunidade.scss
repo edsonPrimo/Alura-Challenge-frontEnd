@@ -7,9 +7,12 @@
         width: 100%;
         justify-content: center;
     }
-
     &__container {
         width: 49%;
+        margin-bottom: 2rem;
+        &:hover .conteudo-comunidade__feedback {
+            display: flex;
+        }
         @include for-tablet {
             width: 85%;
         }
@@ -18,7 +21,6 @@
         }
         @include for-phone {
             width: 100%;
-            padding:1.7rem;
         }
     }
     &__bg{
@@ -31,16 +33,6 @@
         border-radius: 8px;
         box-sizing: border-box;
         position: relative;
-        // @include for-tablet {
-        //     width: 85%;
-        // }
-        // @media screen and (max-width:768px) {
-        //     width: 100%;
-        // }
-        // @include for-phone {
-        //     width: 100%;
-        //     padding:1.7rem;
-        // }
     }
     &__textarea--wrapper{
         width: 100%;
@@ -54,57 +46,72 @@
             position: absolute;
             background-image: url("/src/static/images/mac_buttons.svg");
             background-repeat: no-repeat;
-            background-size: 2.3rem;
+            background-size: 2.5rem;
             @include for-phone {
                 top:2.4rem;
                 left: 2.5rem;
-                background-size: 2rem;
+                background-size: 2.3rem;
             }
         } 
     }
-        .preview {
-            display: block;
-            padding: 1.5rem 1rem 0.5rem 1rem;
-            border-radius: 7px;
-            height: 100%; 
-            box-sizing: border-box;
-            font-family: monospace;
-            border: none;
-            box-sizing: border-box;
-            white-space: pre-wrap;
-            overflow-x: auto;
-            min-height: 300px;
-        }
+    .preview {
+        display: block;
+        padding: 1.5rem 1rem 0.5rem 1rem;
+        border-radius: 7px;
+        height: 100%; 
+        max-height: 300px;
+        box-sizing: border-box;
+        font-family: monospace;
+        border: none;
+        box-sizing: border-box;
+        white-space: pre-wrap;
+        overflow:hidden;
+        min-height: 300px;
+        font-size: 14px;
+    }
       
     &__informacoes{
         background-color: #00000016;
         color: $branco;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         border-radius: 0 0 8px 8px; 
         display: flex;
         flex-direction: column;
         color: $cinza-claro;
-        &:hover {
-
-        }
     }
     &__titulo{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
         font-weight: 700;
         color: $branco;
+        line-height:31.5px
     }
-
+    &__descricao{
+       opacity: 0.8;
+    }
     &__feedback{
-        display: flex;
+        display: none;
         justify-content: space-between;
-        margin:2rem 1rem 0 1rem
+        margin:1.5rem 0.5rem 0 0.5rem
     }
-    &__feedback--like {
+    &__feedback--like{
+        display: flex;
+    }
+    &__feedback--link {
+        text-decoration: none;
+        color: $branco;
         display:flex;
-        width: 100px;
+        width: 60px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin-right: 20px;
+        border-radius: 8px;
+        &:hover{
+            background:$cinza08;
+        }
+        &:active{
+            background: $cinza016;
+        }
     }
     .client__link {
         @include for-tablet {

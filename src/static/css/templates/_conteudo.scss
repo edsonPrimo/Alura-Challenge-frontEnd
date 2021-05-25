@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 348px;
+        height: 360px;
         padding: 2rem;
         border-radius: 8px;
         box-sizing: border-box;
@@ -30,7 +30,11 @@
         height: 100%; 
         box-sizing: border-box;
         font-family: monospace;
+        font-size: 14px;
         border: none;
+        box-sizing: border-box;
+        white-space: pre-wrap;
+        overflow: auto;
     }
     &__textarea--wrapper{
         width: 100%;
@@ -44,11 +48,10 @@
             position: absolute;
             background-image: url("/src/static/images/mac_buttons.svg");
             background-repeat: no-repeat;
-            background-size: 3rem;
+            background-size: 2.6rem;
             @include for-phone {
                 top:2.4rem;
                 left: 2.5rem;
-                background-size: 2.6rem;
             }
         } 
     }

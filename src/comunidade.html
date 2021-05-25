@@ -115,18 +115,59 @@ const unfold = (f, seed) => {
 		<div class="conteudo-comunidade__informacoes">
 			<h3 class="conteudo-comunidade__titulo">Título do projeto</h3>
 			<p class="conteudo-comunidade__descricao">Essa é a descrição do meu projeto</p>
-			<div class="conteudo-comunidade__feedback">
+			<div class="hide conteudo-comunidade__feedback">
 				<div class="conteudo-comunidade__feedback--like">
-					<img src="static/images/icon-coment.svg" alt=""><span>9</span>
-					<img src="static/images/icon-like.svg" alt=""><span>9</span>
+					<a href="#" class="conteudo-comunidade__feedback--link">
+						<img src="static/images/icon-coment.svg" alt=""><span>9</span>
+					</a>
+					<a href="#" class="conteudo-comunidade__feedback--link">
+						<img src="static/images/icon-like.svg" alt=""><span>9</span>
+					</a>
 				</div>
 				<a href="#" class="client__link">
 					<img src="static/images/edson-user.jpg" class="client__foto alt"><span class="client__nome">Edson</span>
-				</a>
+				</a> 
 			</div>
 		</div>
 	</div>	
-	</div>
+	
+	<div class="conteudo-comunidade__container">
+		<div class="conteudo-comunidade__bg">
+			<div class="conteudo-comunidade__textarea--wrapper">
+				<pre><code class="preview hljs" contenteditable="false" aria-label="editor">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+const go = (f, seed, acc) => {
+	const res = f(seed)
+	return res ? go(f, res[1], acc.concat([res[0]])) : acc
+}
+return go(f, seed, [])
+}
+				</code></pre>
+			</div>
+		</div>
+	<div class="conteudo-comunidade__informacoes">
+		<h3 class="conteudo-comunidade__titulo">Título do projeto</h3>
+		<p class="conteudo-comunidade__descricao">Essa é a descrição do meu projeto</p>
+		<div class="hide conteudo-comunidade__feedback">
+			<div class="conteudo-comunidade__feedback--like">
+				<a href="#" class="conteudo-comunidade__feedback--link">
+					<img src="static/images/icon-coment.svg" alt=""><span>9</span>
+				</a>
+				<a href="#" class="conteudo-comunidade__feedback--link">
+					<img src="static/images/icon-like.svg" alt=""><span>9</span>
+				</a>
+			</div>
+			<a href="#" class="client__link">
+				<img src="static/images/edson-user.jpg" class="client__foto alt"><span class="client__nome">Edson</span>
+			</a> 
+		</div>
+	</div>	
+</div>
+
 </main>
 </div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
