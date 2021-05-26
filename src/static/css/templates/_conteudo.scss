@@ -76,6 +76,7 @@
         border: none;
         background: $azul-input;
         color: $cinza-claro;
+        transition: 0.35s ;
         &:hover{
            background: rgba(80, 129, 251, 0.16)
         }

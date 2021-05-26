@@ -76,6 +76,7 @@ $azul-bebe:#7BA4FC;
     font-family:'Inter', sans-serif;
     box-sizing: border-box;
     text-indent: 1rem;
+    transition: ease 0.35s ;
 }
 @mixin input-placeholder {
     color: $branco64;
