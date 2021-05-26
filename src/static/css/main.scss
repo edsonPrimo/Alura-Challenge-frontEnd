@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 $branco: #ffffff;
+$branco64: rgba(255, 255, 255, 0.64);
 $cinza08: rgba(255, 255, 255, 0.08);
 $cinza016: rgba(255, 255, 255, 0.16);
 $cinza024: rgba(255, 255, 255, 0.24);
@@ -77,7 +78,7 @@ $azul-bebe:#7BA4FC;
     text-indent: 1rem;
 }
 @mixin input-placeholder {
-    color: rgba(211, 211, 211, 0.534);
+    color: $branco64;
     text-indent: 1rem;
     box-sizing: border-box;  
 }

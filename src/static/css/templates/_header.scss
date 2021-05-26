@@ -34,7 +34,7 @@
     &__input{
         @include input;
         &:hover, &:focus{
-            background-color:rgba(211, 211, 211, 0.24);
+            background-color:$cinza024;
         }
         @include for-phone{
             display: none;

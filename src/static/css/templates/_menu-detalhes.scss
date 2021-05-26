@@ -18,7 +18,7 @@
     &__input{
         @include input ;
         &:hover, &:focus{
-           background-color: rgba(211, 211, 211, 0.24);
+        background-color: $cinza024;
         }
     }
     &__input::placeholder{
@@ -38,7 +38,8 @@
     }
     &__select{
         padding: 0.75rem;
-        color: rgba(211, 211, 211, 0.534);
+        color: $branco64;
+        text-indent: 0;
         @include for-tablet {
             width: 49%;
         }

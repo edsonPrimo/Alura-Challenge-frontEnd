@@ -138,7 +138,7 @@ body {
 }
 
 .header__input:hover, .header__input:focus {
-  background-color: rgba(211, 211, 211, 0.24);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 @media screen and (max-width: 599.98px) {
@@ -148,7 +148,7 @@ body {
 }
 
 .header__input::placeholder {
-  color: rgba(211, 211, 211, 0.534);
+  color: rgba(255, 255, 255, 0.64);
   text-indent: 1rem;
   box-sizing: border-box;
 }
@@ -401,11 +401,11 @@ body {
 }
 
 .menu-detalhes__input:hover, .menu-detalhes__input:focus {
-  background-color: rgba(211, 211, 211, 0.24);
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .menu-detalhes__input::placeholder {
-  color: rgba(211, 211, 211, 0.534);
+  color: rgba(255, 255, 255, 0.64);
   text-indent: 1rem;
   box-sizing: border-box;
 }
@@ -427,7 +427,8 @@ body {
 
 .menu-detalhes__select {
   padding: 0.75rem;
-  color: rgba(211, 211, 211, 0.534);
+  color: rgba(255, 255, 255, 0.64);
+  text-indent: 0;
 }
 
 @media screen and (max-width: 1023.98px) {
