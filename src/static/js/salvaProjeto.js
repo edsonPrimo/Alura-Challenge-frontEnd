@@ -23,11 +23,11 @@ const projeto = btnSalvar.addEventListener('click', () => {
     }
 
     function adicionaLocalStorage () {
-    const projetos = JSON.parse(localStorage.getItem("projetos")) || []
-    const projetosAtualizados = [...projetos, projetoNovo] 
+        const projetos = JSON.parse(localStorage.getItem("projetos")) || []
+        const projetosAtualizados = [...projetos, projetoNovo] 
 
-    localStorage.setItem("projetos", JSON.stringify(projetosAtualizados))
-    window.location.href = "./comunidade.html"
+        localStorage.setItem("projetos", JSON.stringify(projetosAtualizados))
+        window.location.href = "./comunidade.html"
     }
 })
 

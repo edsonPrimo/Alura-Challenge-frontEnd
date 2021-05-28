@@ -7,70 +7,14 @@
         width: 100%;
         justify-content: center;
     }
-    &__container {
-        width: 49%;
-        margin-bottom: 2rem;
+
+    &__bg {
         &:hover .conteudo-comunidade__feedback {
             opacity: 1;
             height: fit-content;
         }
-        @include for-tablet {
-            width: 85%;
-        }
-        @media screen and (max-width:768px) {
-            width: 100%;
-        }
-        @include for-phone {
-            width: 100%;
-        }
     }
-    &__bg{
-        width: 100%;
-        background-color: rgb(41, 139, 184);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-sizing: border-box;
-        position: relative;
-    }
-    &__textarea--wrapper{
-        width: 100%;
-    
-            &::before{
-            content: '';
-            width: 3.5rem;
-            top: 2.5rem;
-            left: 2.6rem;
-            height: 1rem;
-            position: absolute;
-            background-image: url("/src/static/images/mac_buttons.svg");
-            background-repeat: no-repeat;
-            background-size: 2.5rem;
-            @include for-phone {
-                top:2.4rem;
-                left: 2.5rem;
-                background-size: 2.3rem;
-            }
-        } 
-    }
-    .preview {
-        display: block;
-        padding: 1.5rem 1rem 0.5rem 1rem;
-        border-radius: 7px;
-        height: 100%; 
-        max-height: 300px;
-        box-sizing: border-box;
-        font-family: monospace;
-        border: none;
-        box-sizing: border-box;
-        white-space: pre-wrap;
-        overflow:hidden;
-        min-height: 300px;
-        font-size: 14px;
-    }
-      
+
     &__informacoes{
         background-color: #00000016;
         color: $branco;

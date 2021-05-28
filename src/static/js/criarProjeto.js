@@ -1,17 +1,14 @@
 export const criaProjeto = ((projeto) => {
     const novoProjeto =
-   `<div class="conteudo-comunidade__container">
-			<div class="conteudo-comunidade__bg">
-				<div class="conteudo-comunidade__textarea--wrapper">
-					<pre><code class="preview hljs" contenteditable="false" aria-label="editor">
-${projeto.conteudo}
-					</code></pre>
-				</div>
-			</div>
+` 	<section class="conteudo conteudo-editor"> 
+			<a href="#" class="conteudo__container-bg conteudo-comunidade__bg">
+				<code class="preview hljs" contenteditable="false" aria-label="editor" data-conteudo></code>
+			</a>
+					
 		<div class="conteudo-comunidade__informacoes">
 			<h3 class="conteudo-comunidade__titulo">${projeto.tituloDoProjeto}</h3>
 			<p class="conteudo-comunidade__descricao">${projeto.descricaoDoProjeto}</p>
-			<div class="conteudo-comunidade__feedback">
+			<div class="conteudo-comunidade__feedback" >
 				<div class="conteudo-comunidade__feedback--like">
 					<a href="#" class="conteudo-comunidade__feedback--link">
 						<img src="static/images/icon-coment.svg" alt=""><span>1</span>
