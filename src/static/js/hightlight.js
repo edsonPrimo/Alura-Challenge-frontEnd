@@ -1,4 +1,4 @@
-const areaDoCodigo = document.querySelector('.conteudo__textarea--wrapper')
+const areaDoCodigo = document.querySelector('.conteudo-editor')
 const linguagem = document.querySelector('.linguagem')
 const botao = document.querySelector('[data-btnHLJS]')
 

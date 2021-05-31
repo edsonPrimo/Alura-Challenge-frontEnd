@@ -7,7 +7,7 @@ export const criaProjeto = ((projeto) => {
 	<div class="conteudo-comunidade__informacoes">
 		<h3 class="conteudo-comunidade__titulo">${projeto.tituloDoProjeto}</h3>
 		<p class="conteudo-comunidade__descricao">${projeto.descricaoDoProjeto}</p>
-		<div class="conteudo-comunidade__feedback" id="alo">
+		<div class="conteudo-comunidade__feedback">
 			<div class="conteudo-comunidade__feedback--like">
 				<a href="#" class="conteudo-comunidade__feedback--link">
 					<img src="static/images/icon-coment.svg" alt=""><span>1</span>
