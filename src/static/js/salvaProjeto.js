@@ -1,6 +1,4 @@
-const btnSalvar = document.querySelector("[data-btnSalvar]")
-    
-const projeto = btnSalvar.addEventListener('click', () => {
+export const salvaProjeto = () => {
        
     const conteudo = document.querySelector("[data-conteudo]").innerText
     const tituloDoProjeto = document.querySelector("[data-projetoTitulo]").value
@@ -29,7 +27,7 @@ const projeto = btnSalvar.addEventListener('click', () => {
         localStorage.setItem("projetos", JSON.stringify(projetosAtualizados))
         window.location.href = "./comunidade.html"
     }
-})
+}
 
 
 

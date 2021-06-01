@@ -2,7 +2,6 @@
 const btnExport = document.querySelector('[data-export="export-btn"]')
 const btnDetail = document.querySelector('[data-export="btn-detail"]')
 
-
 const pegaDados = () => {
     let formato = ''
     let radios = document.getElementsByName('options')
