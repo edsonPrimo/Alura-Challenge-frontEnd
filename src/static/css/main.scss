@@ -6,6 +6,7 @@ $branco64: rgba(255, 255, 255, 0.64);
 $cinza08: rgba(255, 255, 255, 0.08);
 $cinza016: rgba(255, 255, 255, 0.16);
 $cinza024: rgba(255, 255, 255, 0.24);
+$cinza036: rgba(255, 255, 255, 0.36);
 $cinza-claro: #eaeaeb;
 $preto:#141414;
 $azul-input: rgba(80, 129, 251, 0.08);
@@ -85,12 +86,11 @@ $azul-bebe:#7BA4FC;
 }
 
 @mixin botao {
-    width: 100%;
+
     box-sizing: border-box;
     border: none;
     border-radius: 8px;
     padding: 1rem;
-    margin-top: 2.33rem;
     background-color: $azul;
     transition: 0.35s ;
     &:hover{
@@ -99,13 +99,12 @@ $azul-bebe:#7BA4FC;
     &:active{
         border: 4px solid $azul;
     }
-   
 }
 
 body{
     background-color:$azul-background;
 }
-.container {
+.containerFull {
     height: fit-content;
     padding: 1.5rem;
     font-family:'Inter', sans-serif;

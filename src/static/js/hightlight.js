@@ -4,8 +4,8 @@ const botao = document.querySelector('[data-btnHLJS]')
 
 const mudaLinguagem = () => {
     const codigo = areaDoCodigo.querySelector('code')
-    areaDoCodigo.innerHTML = `<code class="preview hljs ${linguagem.value}" contenteditable="true" aria-label="editor" data-conteudo></code>`
-    areaDoCodigo.firstChild.innerText = codigo.innerText
+    codigo.innerHTML = `<code class="preview hljs ${linguagem.value}" contenteditable="true" aria-label="editor" data-conteudo></code>`
+    codigo.firstChild.innerText = codigo.innerText
 }
 
 linguagem.addEventListener('change', () => {

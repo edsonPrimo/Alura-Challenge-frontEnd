@@ -91,10 +91,70 @@
         }
     }
 
-    &__btn-export {
-        @include botao ;
-        width: 20% !important;
-        border: none;
+    .export {
+        margin-top: 1rem;
+        border-radius: 8px;
+        background: $azul;
+        width: 40%;
+        min-width: 230px;
+        display: flex;
+        flex-wrap: wrap;
+        @include for-phone {
+            width: 100%
+        }
+        &__btn {
+            @include botao;
+            justify-content: center;
+            align-items: center;
+            &:first-child {
+                flex-grow: 1;
+            }
+        }
+        &__details{
+            font-size: 0.9rem;
+            padding: .2rem 1rem;
+            width: 100%;
+        }
+        &__input{
+            width: 45%;
+            background: transparent;
+            text-align: right;
+            border: none;
+            text-overflow: ellipsis;
+            &::placeholder{
+                color: $cinza036;
+            }
+        }
+        &__campo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $cinza036;
+            &:first-child {
+                padding-bottom: 1rem;
+            }
+        }
+
+        &__radio {
+            opacity: 0;
+            position: fixed;
+            width: 0;
+            &:checked + label{
+                background: $cinza016;
+                color: $preto;
+                border: 1px solid $azul-background;
+            }
+            &:hover + label {
+                background: $cinza08;
+            }
+        }
+        &__label {
+            background:$azul;
+            padding: .3rem;
+            border-radius: 4px;
+            color: $cinza-claro;
+        }
         
     }
 }
+
